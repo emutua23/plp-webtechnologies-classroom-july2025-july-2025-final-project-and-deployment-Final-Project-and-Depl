@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Error 404">
+    <title>404 - Page Not Found | Emanuel</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Emanuel</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="learning-journey.html" class="nav-link">Journey</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span>☰</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="error-section">
+            <div class="container">
+                <div class="error-content text-center">
+                    <div class="error-number">404</div>
+                    <h1 class="error-title">Oops! Page Not Found</h1>
+                    <p class="error-description">
+                        The page you're looking for seems to have wandered off into the digital void. 
+                        Don't worry, even the best UX designers sometimes create confusing navigation! 😄
+                    </p>
+
+                    <div class="error-actions">
+                        <a href="index.html" class="btn btn-primary">Go Home</a>
+                        <a href="contact.html" class="btn btn-outline">Report Issue</a>
+                    </div>
+
+                    <div class="helpful-links">
+                        <h3>Maybe you were looking for:</h3>
+                        <ul>
+                            <li><a href="portfolio.html">My Portfolio</a></li>
+                            <li><a href="services.html">Services I Offer</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="contact.html">Get In Touch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Emanuel</h3>
+                    <p>UX/UI Architect & Frontend Specialist creating exceptional digital experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Me</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="services.html#ui-ux">UI/UX Design</a>
+                    <a href="services.html#frontend">Frontend Development</a>
+                    <a href="services.html#prototyping">Prototyping</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Emanuel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .error-section {
+            min-height: calc(100vh - var(--header-height) - 200px);
+            display: flex;
+            align-items: center;
+            padding: var(--space-2xl) 0;
+        }
+
+        .error-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .error-number {
+            font-size: clamp(4rem, 15vw, 8rem);
+            font-weight: 900;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: var(--space-md);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .error-title {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            margin-bottom: var(--space-md);
+            color: var(--secondary-color);
+        }
+
+        .error-description {
+            font-size: 1.125rem;
+            margin-bottom: var(--space-xl);
+            color: var(--text-muted);
+        }
+
+        .error-actions {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            margin-bottom: var(--space-2xl);
+            flex-wrap: wrap;
+        }
+
+        .helpful-links {
+            margin-top: var(--space-xl);
+        }
+
+        .helpful-links h3 {
+            margin-bottom: var(--space-md);
+            color: var(--secondary-color);
+        }
+
+        .helpful-links ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--space-lg);
+        }
+
+        .helpful-links a {
+            color: var(--primary-color);
+            text-decoration: underline;
+            transition: color var(--transition-fast);
+        }
+
+        .helpful-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .helpful-links ul {
+                flex-direction: column;
+                gap: var(--space-sm);
+            }
+        }
+
+        /* Fun animation for the 404 number */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .error-number {
+            animation: bounce 2s infinite;
+        }
+    </style>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Track 404 errors for analytics (if needed)
+        console.log('404 Error: Page not found -', window.location.href);
+
+        // Optional: Send to analytics service
+        // if (typeof gtag !== 'undefined') {
+        //     gtag('event', 'page_not_found', {
+        //         'page_location': window.location.href,
+        //         'page_title': document.title
+        //     });
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Emanuel for UX/UI design and frontend development projects.">
+    <title>Contact | Emanuel - UX/UI Architect & Frontend Specialist</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Emanuel</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="learning-journey.html" class="nav-link">Journey</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span>☰</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Let's Work Together</h1>
+                <p class="section-subtitle">Ready to bring your digital vision to life? I'd love to hear about your project.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <!-- Contact Form -->
+                    <div>
+                        <form id="contact-form" class="contact-form" data-validate netlify>
+                            <input type="hidden" name="form-name" value="contact">
+
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company/Organization</label>
+                                <input type="text" id="company" name="company" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-type" class="form-label">Project Type</label>
+                                <select id="project-type" name="project-type" class="form-input">
+                                    <option value="">Select a project type</option>
+                                    <option value="ux-ui-design">UX/UI Design</option>
+                                    <option value="frontend-development">Frontend Development</option>
+                                    <option value="full-stack">Full Stack Development</option>
+                                    <option value="consulting">Design Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Budget Range</label>
+                                <select id="budget" name="budget" class="form-input">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="over-50k">Over $50,000</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline" class="form-label">Project Timeline</label>
+                                <select id="timeline" name="timeline" class="form-input">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP (Rush job)</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="3-6-months">3-6 months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Project Details *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" 
+                                    placeholder="Tell me about your project, goals, and any specific requirements..." 
+                                    required maxlength="1000" data-auto-resize></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <div class="contact-info">
+                            <h3>Get In Touch</h3>
+                            <p>I'm always excited to discuss new projects and opportunities. Whether you need a complete UX/UI overhaul or want to build something from scratch, let's talk about how we can bring your vision to life.</p>
+
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <img src="assets/icons/email.png" alt="Email" class="contact-icon">
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p><a href="/cdn-cgi/l/email-protection#96f3fbf7f8e3f3fad6f3eef7fbe6faf3b8f5f9fb"><span class="__cf_email__" data-cfemail="36535b575843535a76534e575b465a531855595b">[email&#160;protected]</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <img src="assets/icons/linkedin.png" alt="LinkedIn" class="contact-icon">
+                                    <div>
+                                        <h4>LinkedIn</h4>
+                                        <p><a href="#" target="_blank">Connect with me</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method">
+                                    <img src="assets/icons/github.png" alt="GitHub" class="contact-icon">
+                                    <div>
+                                        <h4>GitHub</h4>
+                                        <p><a href="#" target="_blank">View my code</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="availability">
+                                <h4>Current Availability</h4>
+                                <div class="availability-status">
+                                    <span class="status-indicator available"></span>
+                                    <span>Available for new projects</span>
+                                </div>
+                                <p>Response time: Usually within 24 hours</p>
+                            </div>
+
+                            <div class="timezone-info">
+                                <h4>Time Zone</h4>
+                                <p>Eastern Time (ET)</p>
+                                <p>Best contact hours: 9 AM - 6 PM ET</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--light-color);">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="grid grid-2">
+                    <div>
+                        <h3>How long does a typical project take?</h3>
+                        <p>Project timelines vary based on scope and complexity. A simple website redesign might take 2-4 weeks, while a complex web application could take 2-3 months.</p>
+                    </div>
+                    <div>
+                        <h3>What's your design process like?</h3>
+                        <p>I follow a user-centered design process: Research → Wireframe → Design → Prototype → Test → Iterate. You'll be involved throughout the entire process.</p>
+                    </div>
+                    <div>
+                        <h3>Do you work with teams or solo?</h3>
+                        <p>I can work both ways! I collaborate seamlessly with existing teams or handle projects independently, depending on your needs.</p>
+                    </div>
+                    <div>
+                        <h3>What tools do you use?</h3>
+                        <p>For design: Figma, Adobe Creative Suite. For development: VS Code, React, Vue.js, Node.js. I adapt to your team's preferred tools when needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Emanuel</h3>
+                    <p>UX/UI Architect & Frontend Specialist creating exceptional digital experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Me</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="services.html#ui-ux">UI/UX Design</a>
+                    <a href="services.html#frontend">Frontend Development</a>
+                    <a href="services.html#prototyping">Prototyping</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Emanuel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .contact-form {
+            background: white;
+            padding: var(--space-xl);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-info {
+            padding: var(--space-lg);
+        }
+
+        .contact-methods {
+            margin: var(--space-xl) 0;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: var(--space-md);
+        }
+
+        .availability {
+            margin: var(--space-xl) 0;
+            padding: var(--space-lg);
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+        }
+
+        .availability-status {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-sm);
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: var(--space-sm);
+        }
+
+        .status-indicator.available {
+            background: #22C55E;
+        }
+
+        .status-indicator.busy {
+            background: #EF4444;
+        }
+
+        .timezone-info {
+            margin: var(--space-lg) 0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: var(--space-lg);
+            }
+        }
+    </style>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
